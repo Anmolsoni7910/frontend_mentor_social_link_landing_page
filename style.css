@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Inter;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root{
+    --primary-Green: hsl(75, 94%, 57%);
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-Grey: hsl(0, 0%, 20%);
+    --neutral-Dark-Grey: hsl(0, 0%, 12%);
+    --neutral-Off-Black: hsl(0, 0%, 8%);
+
+    --font-size-p : 14px;
+
+    --font-weight-400 : 400;
+    --font-weight-600 : 600;
+    --font-weight-700 : 700;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid white; */
+}
+
+body{
+    background-color: var(--neutral-Off-Black);
+    height: 100%;
+}
+
+.attribution{
+    position: absolute;
+    top: 98%;
+    left: 40%;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    text-align: center;
+}
+
+.container{
+    background-color: var(--neutral-Dark-Grey);
+    height: 450px;
+    width: 300px;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+
+.container .container-img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    
+}
+
+.container .container-img img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.container .container-img img:hover{
+    transform: scale(1.3);
+}
+
+.container h1{
+    color: var(--neutral-White);
+    font-family: inter;
+    font-weight: var(--font-weight-400);
+    font-size: 22px;
+    padding-bottom: 8px;
+}
+
+.location{
+    color: var(--primary-Green);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-p);
+    padding-bottom: 12px;
+}
+
+p{
+    font-size: var(--font-size-p);
+}
+
+.container p q{
+    color: hsl(0, 2%, 64%);
+}
+
+.container-button{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container-button button{
+    display: block;
+    padding: 10px 0;
+    margin: 5px 25px;
+    border-radius: 8px;
+    background-color: var(--neutral-Grey);
+    border: none;
+    outline: none;
+}
+
+.container-button button a{
+    color: var(--neutral-White);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.container-button button:hover,
+.container-button button:hover a{
+    background-color: var(--primary-Green);
+    color: black;
+}
+
+@media only screen and (max-width:450px){
+    .container{
+        height: 450px;
+        width: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
